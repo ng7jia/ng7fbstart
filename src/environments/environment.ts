@@ -5,12 +5,7 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyBtWFmgHG7r-na2LVJhr0qOutgnHaPd5dQ",
-    authDomain: "jia-fire.firebaseapp.com",
-    databaseURL: "https://jia-fire.firebaseio.com",
-    projectId: "jia-fire",
-    storageBucket: "jia-fire.appspot.com",
-    messagingSenderId: "67136755940"
+    
   }
 };
 
