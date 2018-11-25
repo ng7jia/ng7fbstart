@@ -1,0 +1,5 @@
+<ul>
+      <li *ngFor="let shirt of shirts | async">
+        [{{ shirt.id }}] - {{ shirt.name }} is {{ shirt.price }}
+      </li>
+    </ul>

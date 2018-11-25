@@ -1,0 +1,20 @@
+<input type="text" [(ngModel)]="type" name="type" placeholder="Type.." style="display:none;">
+<label>
+  Title:
+  <input type="text" [(ngModel)]="title" name="title" placeholder="">
+</label>
+<label>
+  Notes:
+  <textarea [(ngModel)]="content" name="content" placeholder=""></textarea>
+</label>
+<br>
+<input type="submit" value="Add" (click)="addPost()" class="cta">
+<hr>
+
+
+
+<div *ngFor="let post of posts | async">
+  
+    <font color=ff00ff>{{post.type}}</font><br><strong>{{ post.title}}</strong><br>{{post.content}}
+    <hr>
+</div>

@@ -15,6 +15,13 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { Ng7fireComponent } from './ng7fire/ng7fire.component';
+import { CoursetroComponent } from './coursetro/coursetro.component';
+import { FormsModule } from '@angular/forms';
+import { JiaComponent } from './jia/jia.component';
+import { ShirtsComponent } from './shirts/shirts.component';
+import { ItemsComponent } from './items/items.component';
+import { ItemService } from './item.service';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +31,12 @@ import { Ng7fireComponent } from './ng7fire/ng7fire.component';
     ContactComponent,
     HomeComponent,
     PokemonListComponent,
-    Ng7fireComponent
+    Ng7fireComponent,
+    CoursetroComponent,
+    JiaComponent,
+    ShirtsComponent,
+    ItemsComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -33,9 +45,10 @@ import { Ng7fireComponent } from './ng7fire/ng7fire.component';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [ItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
